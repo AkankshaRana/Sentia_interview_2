@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/propertyListFragment">
+
+    <fragment
+        android:id="@+id/propertyListFragment"
+        android:name="com.example.sentia2.presentation.propertyList.PropertyListFragment"
+        android:label="PropertyListFragment" >
+        <action
+            android:id="@+id/action_propertyListFragment_to_propertyDetailFragment"
+            app:destination="@id/propertyDetailFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/propertyDetailFragment"
+        android:name="com.example.sentia2.presentation.propertyDetail.PropertyDetailFragment"
+        android:label="fragment_property_detail"
+        tools:layout="@layout/fragment_property_detail" />
+</navigation>

@@ -1,0 +1,2 @@
+rootProject.name = "Sentia2"
+include ':app'
